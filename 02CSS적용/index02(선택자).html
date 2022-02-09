@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        /*   1. *은 전역 선택자로, 모든 css 문법에 적용됨, 보통 디자인 시작 전에 반드시 적용할 기초문법을 적는다.*/
+        * {} 
+        /*   2. 태그선택자는 적용하고자 하는 태그를 직접 나타내는 것      */
+        b {color: red;}
+        
+        /* , 콤마 선택자로 ul과 li 동시 선택하기 */
+        ul, li {list-style: none;}
+
+        /* id를 꾸밀때는 #아이디명 */
+        #a1 {color: indianred}
+
+        /* class를 꾸밀때는 .클래스명 */
+        .b1 {color: blue;}
+
+        .abox p {color: greenyellow} /* 공백 선택자.  abox 안에 있는 p에 적용한다는 의미  */
+        .abox > p {color: yellow} /* > 선택자: 직계에만 적용한다는 의미.  abox의 바로 하위 p태그에 적용한다는 것   */
+    </style>
+</head>
+<body>
+    <div class="abox">
+        <p>하위 선택자</p> 
+        <p>하위 선택자</p>
+        <ul>
+            <li><p>하위선택자</p></li> <!-- 무언가에 쌓여있다면, 클래스를 쓰고 그 다음 선택자 쓰고  -->
+            <li><p>하위선택자</p></li>
+        </ul>
+    </div>
+
+
+
+    <!-- meta name=viewport 는 브라우저 화면을 의미 ?? -->
+    <!-- content="IE=edge" -->
+
+    <b>태그 선택자</b>
+
+    <!-- list-style: none; 해줘서 점이 사라짐 -->
+    <ul> 
+        <li>다중선택자</li>
+        <li>다중선택자</li>
+        <li>다중선택자</li>
+    </ul>
+
+    <!-- 아이디는 화면에서 고유하다 -->
+    <!-- 클래스는 여러번 써도 상관 없다. -->
+    <p id="a1">아이디 선택자</p>
+    <!-- <p id="a1">아이디 선택자</p>  아이디 위에 썼으니까 하나 더 쓸 수 없다.-->
+    <p class="b1">클래스 선택자</p>
+    <p class="b1">클래스 선택자</p>
+    <p class="b1">클래스 선택자</p>
+
+
+</body>
+</html>

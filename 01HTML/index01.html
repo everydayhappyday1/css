@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ddd</h1>
+    <p>p 태그는 본문 글자</p>
+    <br>아래칸으로 내려가기
+    <hr> 줄  
+    <br>
+
+    <a href="http://www.naver.com">네이버</a><br>
+    <a href="http://www.google.com">구글</a><br>
+
+    <ul><!--순서가 없는 목록-->
+        <li>목록1</li> <!--커서를 목록 1에 두고 ctrl C + ctrl V 누르면 바로 복붙된다.-->
+        <li>목록2</li>
+        <li>목록3</li>
+        <li>목록4</li>
+        <li>목록5</li>
+    </ul>
+    <ol> <!--순서가 있는 목록: 목록에 숫자가 표현됨-->
+        <li>목록1</li>
+        <li>목록2</li>
+        <li>목록3</li>
+        <li>목록4</li>
+        <li>목록5</li>
+    </ol>
+
+    <img src="seo.png" alt="그림이 존재하지 않습니다." width="300">
+
+    <!--브라우저 별로 음악 파일을 지원하는 형식이 다르다. 잘 확인해야 함.-->
+    <!--주요 브라우저: 크롬, 익스플로어, 폭스, 사파리, 오페라-->
+    <!-- <audio src="음악파일 경로"></audio> -->
+    <!--비디오는 mp4파일, WebM, OGV 파일 등이 있다. 역시 브라우저별로 지원 형식 다르다-->
+    
+
+    <!--입력받기: form, input-->
+    <form action="">
+        아이디: <input type="text" name="id" /><br>
+        비밀번호: <input type="password" name="password" /><br>
+
+        전공 <!--하나만 선택 가능-->
+        <input type="radio" name="major" /> 경영<br>
+        <input type="radio" name="major" /> 컴공<br>
+        <input type="radio" name="major" /> 수학<br> 
+        <input type="radio" name="major" /> 기계<br> 
+        <input type="radio" name="major" /> 화학<br> 
+
+        관심분야 <!--여러개 선택 가능-->
+        <input type="checkbox" name="like" />자바<br>
+        <input type="checkbox" name="like" />디비<br>
+        <input type="checkbox" name="like" />jsp<br>
+        <input type="checkbox" name="like" />스프링<br>
+        <input type="checkbox" name="like" />응용소프트웨어<br>
+
+        <select name="region" id="region"><br>
+            <option>서울</option>
+            <option>경기</option>
+        </select>
+
+        <input type="button" value="버튼" /><br>
+        <button type="button">버튼 </button>
+
+        <input type="submit" vlaue="전송하기"><br>
+        <input type="reset" vlaue="초기화"><br>
+        <input type="file" vlaue="파일첨부"><br>
+    </form>
+
+
+    <!--공간태그-->
+    <!--div: 블록 : 작성된 내용의 라인을 칸으로 인식-->
+    <!--span: 인라인 : 작성된 내용을 공간으로 인식-->
+    <div></div>
+    <span></span>
+
+
+
+
+
+</body>
+</html>

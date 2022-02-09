@@ -1,0 +1,36 @@
+CSS 폴더를 만든다.
+파일 - 오픈 폴더 해서 비주얼 스튜디어와 폴더를 연결시킨다. 
+
+라이브 서버를 연결하기 위해서 
+좌측 바에서 네모 4개짜리 extension (컨트롤쉬프트엑스) 누른다. 
+live를 친다. 
+상단의 Live Server의 install을 누른다. 
+
+프로젝트 explorer - css 가서 폴더 아이콘을 눌러 01HTML폴더를 만든다. 
+파일 아이콘을 눌러서 index01.html을 만든다. 
+
+프로젝트 explorer - css 가서 폴더 아이콘을 눌러 .vscode폴더를 만든다. 
+파일 아이콘을 눌러서 settings.json 파일을 만든다. 
+파일을 열어서 아래 내용을 적어준다. 
+{
+    "liveServer.settings.port":5501
+}
+
+
+인덱스파일로 넘어가서 
+인덱스 파일 키고 정중앙에서 우클릭 open with 라이브 서버 누르기 
+
+파일 - 프리퍼런스 - 세팅스 들어가서 wheel 치고 edigor: mouse wheel zoom에 클릭하고 저장 끔
+파일 - 프리퍼런스 - 세팅스 들어가서 brow 치고 live server > settings : custom browser에서 아래로 내리는 창에서 크롬을 찾아서 누른다.
+파일 - 프리퍼런스 - 세팅스 들어가서 theme치면 배경 색상 고를 수 있다. 
+
+
+
+
+깃에 보내기
+상단 바에서 터미널을 연다.
+git init부터 시작하면 된다.
+
+
+
+
