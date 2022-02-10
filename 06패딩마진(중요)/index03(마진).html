@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('img/a.jpg');
+        }
+
+
+        
+
+        /* 상자 중앙정렬: margin auto 0; */
+        /*두개만 적는건 위아래, 좌우이다. 위아래가 0이고, 좌우가 오토로 적용됨*/
+        .box{
+             margin: 0 auto;
+        }
+
+
+
+
+        p {
+            width: 600px;
+            height: 100px;
+            border: 1px solid #777;
+            background-color: indianred;
+
+            /*margin: 30px;*/      /*하나만 적으면 상하좌우 모두 적용*/
+            /*margin: 10px 20px 10px 20px*/    /* 다 적으면 상 우 하 좌 (시계방향)*/
+            /*margin: 30px 10px;*/   /*첫번째가 위아래, 두번째가 좌우*/
+            /* 세개 써주는 경우는 위, 좌우, 아래 */
+
+
+            
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <p>
+        마진: <br>
+        마진은 상자 바깥 여백 <br>
+        마진끼리는 서로 겹친다. <br>
+        마진이 더 넓은게 표시된다. 
+    </p>
+    <p>
+        마진: <br>
+        마진은 상자 바깥 여백 <br>
+        마진끼리는 서로 겹친다. <br>
+        마진이 더 넓은게 표시된다. 
+    </p>
+
+
+
+    <p class="box">
+
+    </p>
+</body>
+</html>
