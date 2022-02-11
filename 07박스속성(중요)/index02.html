@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list{
+            overflow: hidden;
+            width: 600px;
+            border: 1px solid #777;
+
+            margin: 0 auto;
+        }
+        .list .inner{
+            float: left;
+            width: 150px;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+        .content{
+            overflow: hidden;
+        }
+        .content .left{
+            float: left;
+        }
+        .content .left span{
+            display: block;
+        }
+        .content .right{
+            float: right;
+        }
+        /* wrap 영역 안에서 float left right 해제 */
+        .content .cl {
+            clear: both;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="inner">
+            <!-- 이미지 영역 -->
+            <div class="imgWrap">
+                <img src="img/111.png" alt="">
+            </div>
+            <!-- 컨텐츠 영역 -->
+            <div class="content">
+                <!-- 왼쪽 -->
+                <div class="left">
+                    <span>좌측</span>
+                    <span>좌측</span>
+                    <span>좌측</span>
+                </div>
+                <!-- 오른쪽 -->
+                <strong class="right">우측</strong>
+                <div class="cl">
+                    탑 쌓기 해제....
+                </div>
+                <div>
+                    위에서 해제해서 여기는 영향 안받음 후후 
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="inner">
+            <!-- 이미지 영역 -->
+            <div class="imgWrap">
+                <img src="img/111.png" alt="">
+            </div>
+            <!-- 컨텐츠 영역 -->
+            <div class="content">
+                <!-- 왼쪽 -->
+                <div class="left">
+                    <span>좌측</span>
+                    <span>좌측</span>
+                    <span>좌측</span>
+                </div>
+                <!-- 오른쪽 -->
+                <strong class="right">우측</strong>
+            </div>
+        </div> 
+
+
+        <div class="inner">
+            <!-- 이미지 영역 -->
+            <div class="imgWrap">
+                <img src="img/111.png" alt="">
+            </div>
+            <!-- 컨텐츠 영역 -->
+            <div class="content">
+                <!-- 왼쪽 -->
+                <div class="left">
+                    <span>좌측</span>
+                    <span>좌측</span>
+                    <span>좌측</span>
+                </div>
+                <!-- 오른쪽 -->
+                <strong class="right">우측</strong>
+            </div>
+        </div> 
+
+
+        <div class="inner">
+            <!-- 이미지 영역 -->
+            <div class="imgWrap">
+                <img src="img/111.png" alt="">
+            </div>
+            <!-- 컨텐츠 영역 -->
+            <div class="content">
+                <!-- 왼쪽 -->
+                <div class="left">
+                    <span>좌측</span>
+                    <span>좌측</span>
+                    <span>좌측</span>
+                </div>
+                <!-- 오른쪽 -->
+                <strong class="right">우측</strong>
+            </div>
+        </div> 
+
+
+    </div>
+</body>
+</html>

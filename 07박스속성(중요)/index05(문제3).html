@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outerBox{
+            overflow: hidden;
+            /* border: 1px solid #777; */
+            width: 500px;
+            margin: 0 auto;
+            padding: 5px;
+        }
+        .outerBox .innerTop{
+            border: 1px solid #777;
+            float: left;
+            padding: 5px;
+            overflow: hidden;
+        }
+        .outerBox .innerBottom{
+            border: 1px solid #777;
+            float: left;
+            padding: 5px;
+            overflow: hidden;
+        }
+        .outerBox .innerTop .left,
+        .outerBox .innerBottom .left{
+            float: left;
+            border: 1px solid #777;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <b>과제3</b>
+    <!-- 아우터박스 -->
+    <div class="outerBox">
+        <!-- 이너 상단 -->
+        <div class="innerTop">
+            <div class="left"><img src="img/111.png" alt=""></div>
+            <div class="left"><img src="img/111.png" alt=""></div>
+            <div class="left"><img src="img/111.png" alt=""></div>
+            <div class="left"><img src="img/111.png" alt=""></div>
+        </div>
+        <!-- 이너 하단 -->
+        <div class="innerBottom">
+            <div class="left"><img src="img/111.png" alt=""></div>
+            <div class="left"><img src="img/111.png" alt=""></div>
+            <div class="left"><img src="img/111.png" alt=""></div>
+            <div class="left"><img src="img/111.png" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>

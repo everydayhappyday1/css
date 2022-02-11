@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 필수 초기 설정 */
+        * {margin:0; padding: 0; list-style: none;}
+        
+        
+        /* float으로 수평정렬 (가로로) */
+        .boxList li{
+            float: left;
+        }
+
+
+        /* 그러나 float은 부모요소가 자식을 감싸지 못한다. */
+        /* 확인:float으로 수평정렬하고 f12 눌러서 보면 boxList높이가 0이다. ul이 없네.... 부모가 자식을 감싸지 못함... */
+        /* float 문제 해결방법 1 : 부모요소에 하단 내용 삽입 : 외우기 */
+        /* .boxList::after{
+            content: "";
+            display: block;
+            clear: both;
+        } */
+
+
+
+        /* float 문제 해결방법 2 : 부모요소에 overflow에 hidden을 넣는다. */
+        .boxList {
+            overflow: hidden;
+        }
+
+
+
+        /* 박스 분할하기 */
+        .boxList2{
+            overflow: hidden;
+            border: 1px solid #777;
+            /* 부모요소에 넓이 주기 */
+            /* width: 600px; */
+
+            width: 50%;
+        }
+        .boxList2 li{
+            text-align: center;
+            float: left;
+            /* 부모요소 넓이에 메뉴 숫자 나누면 100 (600/6=100) */
+            /* width: 100px; */
+
+            /* 부모를 100으로 보고 나누기 메뉴의 숫자 (6) --> 100%6 = 16.6666 */
+            width: 16.6666%;
+
+            /* 그냥 보더를 주면 보더의 크기가 합쳐지기 때문에 박스가 무너진다.  */
+            border:1px solid #777;
+            /* border의 크기는 제외하고 박스의 크기를 나누겠다는 box-sizing: boder-box를 삽입해주면 된다. */
+            box-sizing: border-box;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <ul class="boxList">
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+    </ul>
+    <ul class="boxList2">
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+    </ul>
+</body>
+</html>

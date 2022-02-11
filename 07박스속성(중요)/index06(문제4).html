@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {padding: 0; margin: 0; list-style: none;}
+        .wrap{
+            width: 1020px;
+            margin: 50px auto;
+        }
+        .content{
+            overflow: hidden;
+        }
+        .list-wrap{
+            width: 480px;
+            float: left;
+            border: 1px solid #777;
+            overflow: hidden;
+        }
+        .list-wrap .picture{
+            float: left;
+            width: 33.3333%;
+            height: 155px;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+        .slide-wrap{
+            width: 236px;
+            float: left;
+            border: 1px solid #777;
+            height: 310px;
+            margin-left: 8px;
+        }
+        .user-wrap{
+            width: 280px;
+            float: left;
+            border: 1px solid #777;
+            height: 310px;
+            margin-left: 8px;
+        }
+        .user-wrap .up,
+        .user-wrap .down{
+            border: 1px solid #777;
+            height: 50%;
+        }
+        .user-warp .up{
+            overflow: hidden;
+        }
+        .user-warp .up .left{
+            float: left;
+        }
+        .user-warp .up .right{
+            float: right;
+        }
+        .btn{
+            width: 75%;
+            border: none;
+            background-color: #19ce60;
+            color: #fff;
+            padding: 10px 30px;
+            /* a태그로 만든 버튼을 위해 */
+            text-decoration: none; 
+            /* 마우스 커서를 손가락 모양으로 */
+            cursor: pointer;
+            /* 버튼 깨짐 방지: width와 height를 적용한다. */
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <section>
+        <!-- 감싸주는 부분 -->
+        <div class="wrap">
+        
+        <!-- float으로 좌, 중, 우 세개 띄우기 -->
+        <div class="content">
+            <div class="list-wrap"><!-- 왼 -->
+                <ul>
+                    <li class="picture">사진</li>
+                    <li class="picture">사진</li>
+                    <li class="picture">사진</li>
+                    <li class="picture">사진</li>
+                    <li class="picture">사진</li>
+                    <li class="picture">사진</li>
+                </ul>
+            </div>
+            <div class="slide-wrap"><!-- 가운데 -->
+                이미지....
+            </div>
+            <div class="user-wrap"><!-- 오른쪽 -->
+                <div class="up">
+                    <div>
+                        <p class="left">멜론을 더 안전하게 이용하세요</p>
+                        <p class="right">회원가입</p>
+                    </div>
+                    <button class="btn">로그인</button>
+                </div>
+                <div class="down">
+                    프로모션 영역...
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+
+
+
