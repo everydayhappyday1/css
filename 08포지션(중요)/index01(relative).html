@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin:0; padding: 0;}
+        .list{
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid #777;
+        }
+        p{
+            border: 1px solid #777;
+            height: 100px;
+        }
+        .inner1{background-color: aqua;}
+        .inner2{
+            background-color: yellow;
+            /* 블럭을 내 위치에서 z축 방향으로 올림 */
+            /* 10px 아래로 내렸을 때, z축으로 올라갔으니까 다른 내용물 위로 올라간다. */
+            position: relative; 
+            top: 10px; /*포지션 규칙 1: top, bottom중 1개를 반드시 입력한다.*/
+            left: 10px; /* 포지션 규칙 2: left, right중 1개를 반드시 입력한다.*/
+            width: 100px;
+            height: 100px;
+        }
+        .inner3{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="content">   
+            <p class="inner1">포지션</p>
+            <p class="inner2">포지션</p>
+            <p class="inner3">포지션</p>
+        </div>
+    </div>
+</body>
+</html>

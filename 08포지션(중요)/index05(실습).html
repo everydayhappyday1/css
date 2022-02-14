@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* parkinwook.github.io/TEST1.github.io/ */
+        * {margin: 0; padding: 0; list-style: none;}
+
+        .logo {text-align: center;}
+        .menu {
+            background-color: black;
+            text-align: center;
+        }
+        .menu li{
+            display: inline;
+        }
+        .menu li a{
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+        .menu li a:hover{
+            background-color: #999;
+        }
+
+        .slider ul{
+            overflow: hidden;
+            width: 960px;
+            margin: 0 auto;
+        }
+        .slider ul li{
+            float: left;
+            text-align: center;
+            width: 25%;
+            box-sizing: border-box;
+            margin-bottom: 100px;
+        }
+        section{
+            width: 700px;
+            margin: 0 auto;
+            position: relative;
+            
+        }
+        
+        section .left{
+            position: absolute;
+            top: 0;
+            left: -220px;
+        }
+        section .right{
+            position: absolute;
+            top: 0;
+            right: -220px;
+        }
+
+        .top{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+        .top a{ 
+            color: black;
+            text-decoration: none;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="slider">
+        <ul>
+            <li>
+                <img src="img/item01.png" alt="">
+                <br>
+                "iPhone"
+                <br>
+            </li>
+            <li>
+                <img src="img/item02.png" alt="">
+                <br>
+                "iPod"
+                <br>
+            </li>
+            <li>
+                <img src="img/item03.png" alt="">
+                <br>
+                "iPad"
+                <br>
+            </li>
+            <li>
+                <img src="img/item04.png" alt="">
+                <br>
+                "iMac"
+                <br>
+            </li>
+        </ul>
+    </article>
+    <section>
+        <div class="content">
+            <img src="img/ipad.jpg" alt="">
+            <div>
+                <aside class="left">
+                    <img src="img/side01.png" alt="">
+                    <br><br>
+                    <img src="img/side02.png" alt="">
+                </aside>
+                <aside class="right">
+                    <img src="img/side03.png" alt="">
+                    <br><br>
+                    <img src="img/side04.png" alt="">
+                </aside>
+            </div>
+        </div>
+    </section>
+    <div class="top">
+        <a href="#">TOP</a>
+    </div>
+</body>
+</html>

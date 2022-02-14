@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400&display=swap');
+* {margin:0; padding: 0;}
+ul, li {list-style: none;}
+a {text-decoration: none;}
+html, body {font-family: 'Noto Serif KR', serif;}
+
+
+
+
+/* 전체넓이: 960px */
+#main_header {width: 960px; margin: 0 auto; height: 160px; position: relative}
+#main_header .title {position: absolute; left: 10px; top: 30px;}
+#main_header .main_gnb {position: absolute; right: 0; top: 0;} 
+#main_header .main_lnb {position: absolute; right: 0; bottom: 10px}
+
+
+
+
+/* 메뉴 */
+.main_gnb ul {overflow: hidden;}
+.main_gnb ul li {float: left;}
+.main_gnb ul li a {
+    /* a태그는 인라인이기 때문에 디스플레이 바꿔줘야 사이즈 변경 가능 */
+    display: inline-block;
+    padding: 3px 5px;
+    border: 1px solid #777;
+    /* border-radius: 8px; */
+}
+.main_gnb ul li a:hover {
+    background-color: #777;
+    color: #fff;
+}
+/* 메뉴 모서리 둥글게 깎기  */
+/* 요소의 index번째의 표현    :nth-child(n) */
+.main_gnb ul li:nth-child(1) a {border-radius: 8px 0 0 8px;}
+.main_gnb ul li:nth-child(5) a {border-radius: 0 8px 8px 0;}
+
+
+.main_lnb ul {overflow: hidden;}
+.main_lnb ul li {float: left;}
+
+
+
+
+
+
+/* 서브 메뉴 */
+.main_lnb ul {overflow: hidden;}
+.main_lnb ul li {float: left;}
+.main_lnb ul li a {
+    /* a태그는 인라인이기 때문에 디스플레이 바꿔줘야 사이즈 변경 가능 */
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid #777;
+    /* border-radius: 8px; */
+}
+.main_lnb ul li a:hover {
+    background-color: #777;
+    color: #fff;
+}
+/* 메뉴 모서리 둥글게 깎기  */
+/* 요소의 index번째의 표현    :nth-child(n) */
+.main_lnb ul li:nth-child(1) a {border-radius: 8px 0 0 8px;}
+.main_lnb ul li:nth-child(5) a {border-radius: 0 8px 8px 0;}
+
+
+
+
+
+/* 본문 */
+#content {width: 960px; margin: 0 auto; overflow: hidden;}
+#content .main_section{
+    width: 750px;
+    float: left;
+}
+#content .main_article{
+    border: 1px solid #777;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+#content .main_aside{
+    width: 200px;
+    float: right;
+    border: 1px solid #777;
+}
+
+
+
+
+
+
+/* 탭 영역 */
+.main_aside > .buttons {overflow: hidden;}
+.main_aside > .buttons > label{
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+.tab_content ul li a {display: block;}
+.tab_content ul li a span {display: block;}

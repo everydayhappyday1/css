@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; list-style: none;}
+        body{
+            background-color: aquamarine;
+            height: 1000px;
+        }
+        header{
+            position: fixed;
+            /* 포지션 1,2번 법칙 */
+            left: 0;
+            top: 0;
+            /* 부모영역에 대해셔 100% */
+            width: 100%;
+
+            z-index: 20px;
+        }
+        
+        .logo{text-align: center; background-color: #fff;}
+        .menu {background-color: black; text-align: center; ;}
+        /* 리스트를 가로로 배치  */
+        .menu ul li {display: inline;}
+        .menu ul li a{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        .menu ul li a:hover{
+            background-color: #999;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/111.png" alt="">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <style>
+        .inner1{height: 500px; background-color: antiquewhite;}
+        .inner2{
+            /*
+                sticky 법칙 
+                1. sticky 속성을 사용하면 top, bottom, left, right 중 하나를 반드시 넣는다.
+                2. 부모에 overflow 속성이 있으면 동작하지 않는다.
+                3. top 속성에는 스크롤이 이동됐을 때 fixed 되는 지점을 기록한다. 
+            */
+            background-color: blueviolet;
+            position: sticky;
+            top: 300px;
+            left: 0;
+            /* 동작되는 위치의 값을 넣어야 함 */
+            top: 150px; 
+        }
+        .inner3{height: 1500px; background-color: tomato;}
+    </style>
+
+
+    <section>
+        <div class="inner1">내용</div>
+        <div class="inner2">sticky는 기존에는 평상시와 같다가 일정 높이에서 fixed로 변경된다.</div>
+        <div class="inner3">내용</div>
+    </section>
+</body>
+</html>

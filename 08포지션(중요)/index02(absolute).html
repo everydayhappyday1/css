@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        section {
+            overflow: hidden;
+            width: 500px;
+            background-color: aqua;
+        }
+        section .box {
+            width: 25%;
+            height: 100px;
+            background-color: yellow;
+            float: left;
+
+
+            border: 1px solid #777;
+            box-sizing: border-box;
+            /* position absolute는 부모영역의 relative를 기준으로 움직인다.*/
+            /* 자식에 absolute를 쓰고싶으면, 부모 영역에 relative를 준다. */
+            /* 안주면 body가 기준이 된다.  */
+            position: relative;
+        }
+        .pos{
+            background-color: brown;
+            /* 부모요소 기반으로  z축으로 올린다. */
+            /* absolute를 쓰고싶으면, 부모 영역에 relative를 준다. */
+            position: absolute; 
+            right: 0px; /* 포지션 규칙 2: left, right중 1개를 반드시 입력한다.*/
+            top: 0px; /*포지션 규칙 1: top, bottom중 1개를 반드시 입력한다.*/
+        }
+    </style>
+</head>
+<body>
+    <!-- section .box 기준으로 릴에이티브를 배치해서 확인 -->
+    <!-- <section style="position: relative;"> -->
+    <section>
+        <div class="box">박스</div>
+        <div class="box">박스</div>
+        <div class="box">박스</div>
+        <div class="box">
+            박스
+            <div class="pos">포지션</div>
+        </div>
+    </section>
+</body>
+</html>

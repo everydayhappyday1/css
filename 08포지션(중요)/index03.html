@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0; list-style: none;}
+        .wrap{
+            width: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #666;
+            position: relative;
+            /* 500을 줬지만 지금 522가 된 이유: 보더, 패딩 등을 줘서: 보더사이즈로 해결 */
+            box-sizing: border-box;
+        }
+        .wrap .wrap-img{
+            position: absolute;
+            left: 10px; 
+            top: 10px;
+        }
+        .wrap .wrap-img img {width: 50px;}
+        .wrap-content, .wrap-control{
+            padding-left: 60px;
+        }
+        .wrap-content textarea{
+            width: 100%;
+            padding: 10px;
+            /* 세로만 사이즈가 변한다.  */
+            resize: vertical;
+            /* 패딩이 겹쳤을 때 예쁘게 만들기  */
+            box-sizing: border-box;
+        }
+        .wrap-control{
+            overflow: hidden;
+        }
+        .wrap-control .wrap-input{
+            float: left;
+        }
+        .wrap-control .wrap-input input{
+            display: block;
+            width: 150px;
+            margin-bottom: 5px;
+        }
+        .wrap-control button{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="wrap-img"><!--이미지 영역-->
+            <img src="img/111.png" alt="">
+        </div>
+        <div class="wrap-content"><!--내용 영역-->
+            <textarea rows="10" placeholder="댓글등록"></textarea>
+        </div>
+        <div class="wrap-control"><!--버튼 영역-->
+            <div class="wrap-input">
+                <input type="text">
+                <input type="text">
+            </div>
+            <button type="button">등록하기</button>
+        </div>
+    </div>
+
+    <div class="wrap"><!--하단 영역 -->
+        <div class="wrap-img">
+            <img src="img/111.png" alt="">
+        </div>
+        <div class="wrap-control">
+            <div class="wrap-input">
+                <!-- p는 블럭이다. br 안줘도 내려간다. -->
+                <p><strong>제목</strong></p>
+                <p></p><small>내용</small></p>
+            </div>
+            <button type="button">삭제</button>
+            <button type="button">수정</button>
+            
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
