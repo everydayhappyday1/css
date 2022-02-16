@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 1, 2, 3번 순서 꼭 지켜야 함 (css파일, 제이쿼리, js순) -->
+    <!-- 부트스트랩 적용방법 1. (css파일이나 min파일 하나를 링크)-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- 2. jQuery 링크걸기: jquery 사이트 들어가서 uncompressed 눌러서 주소 복붙-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- 3. js 경로 링크 걸기 -->
+    <script src="js/bootstrap.js"></script>
+
+
+
+
+
+    
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <!-- 부트스트랩 그리드: 전체영역은 항상 12 칸이다.  -->
+            <!-- 2를 주면 12칸을 6칸으로 쪼개겠다는 이야기  -->
+            <!-- 4를 주면 12칸을 3칸으로 쪼개겠다는 이야기 -->
+            <!-- 6을 주면 12칸을 2칸으로 쪼개겠다는 이야기 -->
+            <!-- xs: 768 이하에서 동작 -->
+            <!-- sm: 992 이하에서 동작 -->
+            <!-- md: 1200 이하에서 동작 -->
+            <!-- lg: 1200 이상에서 동작 -->
+            <!-- lg에서 두칸씩 잡을거야: col-lg-2 -> 1200화면에서 전체화면을 2개로 쪼개겠다. -->
+
+
+
+            <!-- lg이면 2개로, md이면 3개로, sm이면 6개로, xs이면 12개로 분할 동작하시오 -->
+            <!-- 3개로 동작하면 6개는 4개가 됨  -->
+            <!-- 스몰사이즈는 6이니까 2칸씩 작동 -->
+            <!-- 모바일 사이즈가 되면 전체를 하나로 사용하게 됨   -->
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">내용</div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">내용</div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">내용</div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">내용</div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">내용</div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">내용</div>
+        </div>
+    </div>
+
+
+    <hr>
+
+
+    <!-- container-fluid는 전체영역을 다 잡는다.  -->
+    <!-- xs는 모바일 사이즈 -->
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col-xs-2">내용</div>
+            <div class="col-xs-2">내용</div>
+            <div class="col-xs-2">내용</div>
+            <div class="col-xs-2">내용</div>
+            <div class="col-xs-2">내용</div>
+            <div class="col-xs-2">내용</div>
+            
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+
+
+    <div class="container">
+        <div class="row">
+            <!-- 768px이상에서 동작하는 화면그리드 -->
+            <!-- sm, md는 태블릿 사이즈 -->
+            <div class="col-sm-2">내용</div><!--2면 전체 영역에서 6분의 1이다. 전체영역: 12-->
+            <div class="col-sm-2">내용</div>
+            <div class="col-sm-2">내용</div>
+            <div class="col-sm-2">내용</div>
+            <div class="col-sm-2">내용</div>
+            <div class="col-sm-2">내용</div>
+        </div>
+        
+        <div class="row">
+            <!-- 992px 이상에서 동작하는 화면그리드 -->
+            <!-- sm, md는 태블릿 사이즈 -->
+            <div class="col-md-2">내용</div>
+            <div class="col-md-2">내용</div>
+            <div class="col-md-2">내용</div>
+            <div class="col-md-2">내용</div>
+            <div class="col-md-2">내용</div>
+            <div class="col-md-2">내용</div>
+        </div>
+
+        <div class="row">
+            <!-- 1200px 이상에서 동작하는 화면그리드 -->
+            <!-- 컴퓨터 화면 사이즈 -->
+            <div class="col-lg-2">내용</div>
+            <div class="col-lg-2">내용</div>
+            <div class="col-lg-2">내용</div>
+            <div class="col-lg-2">내용</div>
+            <div class="col-lg-2">내용</div>
+            <div class="col-lg-2">내용</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

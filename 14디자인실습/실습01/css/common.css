@@ -1,0 +1,36 @@
+/* 모든 파일에 공통 적용할 css */
+
+
+/* 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body, html {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    min-width: 350px; /*최소크기*/
+}
+ul, li, ol, dd, dl {list-style: none;}
+img {max-width: 100%; height: auto;} /*넓이에 맞춰서 높이 자동으로 조절*/
+input, textarea, button, select {
+    appearance: none; /* 브라우저별 버튼 등 다른 속성을 쓰지 않는다. */
+}
+
+/* 헤더가 fixed로 올라와있고 높이가 50px이기 때문에 */
+/* 섹션과 아티클에 마진탑을 준다. */
+section, article{
+    margin-top: 50px;
+}
+
+
+/* 부트스트랩 버튼 */
+.form-control{
+    border-radius: 0;
+}
+.form-control:focus{
+    border: 1px solid #000;
+    box-shadow: none;
+}
+.btn{
+    border-radius: 0;
+}
+

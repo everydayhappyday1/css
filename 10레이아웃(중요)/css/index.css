@@ -99,5 +99,53 @@ html, body {font-family: 'Noto Serif KR', serif;}
     background-color: #333;
     color: #fff;
 }
-.tab_content ul li a {display: block;}
+.tab_content ul li a {
+    display: block; 
+    position: relative;
+    padding: 10px;
+    border-top: 1px solid #777;
+}
+/* 맨 위 상자에 상위부분에 선 없애기 */
+.tab_content ul li:nth-child(1) a{
+    border-top: none;
+} 
+
 .tab_content ul li a span {display: block;}
+
+.tab_content ul li a .thumbs{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.tab_content ul li a .content{
+    padding-left: 55px;
+}
+
+.tab_content ul li a .content > strong,
+.tab_content ul li a .content > p {font-size: 15px;}
+
+
+/* 상자 밖으로 넘어가는 컨텐츠 생략처리 */
+.tab_content ul li a .content > strong {
+    font-size: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    width: 125px;
+    overflow: hidden;
+}
+
+
+
+
+/* 푸터 */
+footer {
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    padding: 10px;
+    box-sizing: border-box; /*패딩 마진을 박스 크기에 포함시켜라*/
+    text-align: center;
+    
+}
